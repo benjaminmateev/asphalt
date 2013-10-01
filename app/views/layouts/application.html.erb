@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<%= render :partial => "/shared/html_tag" %>
+  <%= render :partial => "/shared/head" %>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div id="head" class="eight columns centered">
+          <h1 id='logo'>
+            <a href="/"><img src="images/logo.png" /></a>
+          </h1>
+          <div class="clearfix"></div>
+        </div>
+      </div>
+      <div class="row">
+        <div id="menu-row" class="eight columns centered">
+          <%= render(:partial => "/shared/menu", :locals => {
+                       :dom_id => 'menu',
+                       :css => 'menu'
+                     }) %>
+        </div>
+      </div>
+      <div class="row" id='page'>
+        <div id="content" class="eight columns centered">
+          <%= yield %>
+        </div>
+      </div>
+      <div class="row">
+        <div id="footer" class="eight columns centered">
+          <%= render :partial => "/shared/footer" -%>
+        </div>
+      </div>
+    </div>
+    <%= render :partial => "/shared/javascripts" %>
+  </body>
+</html>

@@ -1,0 +1,15 @@
+<% if post.live? %>
+  <article class="blog_post" id="<%= dom_id(post) %>">
+    <header>
+      <section class='details'>
+        <time datetime="<%=l post.published_at.to_date, :format => :default %>" class='posted_at'>
+          <%= l(post.published_at.to_date, :format => :default) %>
+        </time>
+      </section>
+      <h2><%= post.title %></h2>
+    </header>
+    <section class='clearfix'>
+      <%= post.body.html_safe %>
+    </section>
+  </article>
+<% end %>

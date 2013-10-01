@@ -1,0 +1,179 @@
+/* line 1, ../../app/stylesheets/application.sass */
+body {
+  font-family: Arial Narrow, Arial, sans-serif;
+  letter-spacing: 1;
+}
+
+/* line 5, ../../app/stylesheets/application.sass */
+#head {
+  background-color: rgba(17, 17, 17, 0.85);
+  margin-top: 10px !important;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+}
+/* line 12, ../../app/stylesheets/application.sass */
+#head #logo {
+  margin-bottom: 0px;
+  font-size: 0rem;
+}
+/* line 16, ../../app/stylesheets/application.sass */
+#head #logo img {
+  width: 250px;
+}
+
+/* line 19, ../../app/stylesheets/application.sass */
+#menu-row {
+  background-color: rgba(17, 17, 17, 0.85);
+  margin-bottom: 20px !important;
+  padding: 0px 20px;
+  margin-top: 10px;
+  padding-top: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+}
+
+/* line 29, ../../app/stylesheets/application.sass */
+#content {
+  background-color: rgba(17, 17, 17, 0.85);
+  margin-bottom: 20px !important;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+}
+/* line 36, ../../app/stylesheets/application.sass */
+#content h1 {
+  font-size: 2.5em;
+  text-transform: uppercase;
+}
+/* line 40, ../../app/stylesheets/application.sass */
+#content h2 {
+  font-size: 1.5em;
+  text-transform: uppercase;
+  letter-spacing: -1;
+  margin-left: 0px;
+}
+/* line 46, ../../app/stylesheets/application.sass */
+#content h3 {
+  font-size: 1.25em;
+  font-family: Times New Roman, Times, serif;
+}
+/* line 50, ../../app/stylesheets/application.sass */
+#content p {
+  font-family: Times New Roman, Times, serif;
+  font-size: 14px;
+}
+/* line 54, ../../app/stylesheets/application.sass */
+#content ul {
+  margin: 5px;
+}
+/* line 56, ../../app/stylesheets/application.sass */
+#content ul li {
+  margin-bottom: 2px;
+}
+/* line 59, ../../app/stylesheets/application.sass */
+#content strong {
+  color: white;
+  font-family: Arial Narrow, Arial, sans-serif;
+  letter-spacing: 1;
+}
+/* line 64, ../../app/stylesheets/application.sass */
+#content .event-image {
+  margin-top: 15px;
+  float: left;
+}
+/* line 68, ../../app/stylesheets/application.sass */
+#content .event {
+  margin-top: 15px;
+  float: left;
+  margin-left: 15px;
+  width: 75%;
+}
+/* line 74, ../../app/stylesheets/application.sass */
+#content .event p {
+  margin: 5px;
+}
+
+/* line 77, ../../app/stylesheets/application.sass */
+#page {
+  margin-top: -10px;
+  margin-bottom: -10px;
+  min-height: 540px;
+}
+
+/* line 82, ../../app/stylesheets/application.sass */
+#footer {
+  background-color: rgba(17, 17, 17, 0.85);
+  font-family: Times New Roman, Times, serif;
+  margin-bottom: 10px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+}
+/* line 90, ../../app/stylesheets/application.sass */
+#footer .imprint {
+  float: right;
+}
+/* line 93, ../../app/stylesheets/application.sass */
+#footer .copyright {
+  font-family: Arial Narrow, Arial, sans-serif;
+  letter-spacing: 1;
+}
+
+/* line 97, ../../app/stylesheets/application.sass */
+.columns {
+  padding: 10px 20px;
+  color: #aeb1b5;
+}
+
+/* line 101, ../../app/stylesheets/application.sass */
+h1, h2, h3, h4, h5, h6 {
+  color: white;
+}
+
+/* line 104, ../../app/stylesheets/application.sass */
+a {
+  color: #aeb1b5;
+  font-family: Arial Narrow, Arial, sans-serif;
+  letter-spacing: 1;
+}
+/* line 109, ../../app/stylesheets/application.sass */
+a:hover {
+  color: white;
+}
+/* line 111, ../../app/stylesheets/application.sass */
+a:active {
+  color: white;
+}
+
+/* line 114, ../../app/stylesheets/application.sass */
+nav {
+  height: 35px;
+}
+/* line 117, ../../app/stylesheets/application.sass */
+nav ul {
+  list-style: none outside;
+  overflow: hidden;
+  font-size: 16px;
+  font-family: Times New Roman, Times, serif;
+}
+/* line 123, ../../app/stylesheets/application.sass */
+nav ul li {
+  display: block;
+  float: left;
+  padding: 5px 10px 0 0;
+  font-weight: bold;
+  margin-right: 5px;
+}
+/* line 130, ../../app/stylesheets/application.sass */
+nav ul li a {
+  font-family: Times New Roman, Times, serif;
+  letter-spacing: 1px;
+}
+
+/* line 136, ../../app/stylesheets/application.sass */
+.booking div object {
+  width: 300px !important;
+  height: 350px !important;
+}

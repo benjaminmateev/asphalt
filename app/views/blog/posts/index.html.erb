@@ -1,0 +1,15 @@
+<% content_for :body_content_left do %>
+  <%=raw @page[Page.default_parts.first.to_sym] if Page.default_parts.any? %>
+
+  <% if @blog_posts.any? %>
+    <section id="blog_posts">
+      <%= render :partial => "/blog/shared/post", :collection => @blog_posts %>
+      <%= will_paginate @blog_posts %>
+    </section>
+  <% else %>
+    <p><%= t('.no_blog_articles_yet') %></p>
+  <% end %>
+<% end %>
+
+<%= render :partial => "/shared/content_page" %>
+<% content_for :stylesheets, stylesheet_link_tag('refinerycms-blog') %>

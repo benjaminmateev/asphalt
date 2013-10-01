@@ -1,0 +1,16 @@
+<% content_for :body_content_left do %>
+  <div id="show_blog_post">
+    <%= render 'post' %>
+  </div>
+<% end %>
+
+<%= render :partial => "/shared/content_page", :locals => { :remove_automatic_sections => true }  %>
+
+<% content_for :stylesheets, stylesheet_link_tag('refinerycms-blog') %>
+<% content_for :before_javascript_libraries, jquery_include_tags(:jquery_ui => false) %>
+<% content_for :javascripts do %>
+  <%# enable AJAX'd post nav at your own risk until html5 history API implemented. %>
+  <%#= javascript_include_tag('refinerycms-blog') %>
+  <script src="http://w.sharethis.com/button/buttons.js"></script>
+  <script>stLight.options({publisher:'<%= BlogPost::ShareThis.key %>'});</script>
+<% end if BlogPost::ShareThis.enabled? %>
