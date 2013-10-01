@@ -6,9 +6,9 @@ set :deploy_via, :copy
 
 set :user, :root
 
-role :web, "ben.urbanvention.com"                          # Your HTTP server, Apache/etc
-role :app, "ben.urbanvention.com"                          # This may be the same as your `Web` server
-role :db,  "ben.urbanvention.com", :primary => true # This is where Rails migrations will run
+role :web, "198.211.120.82"                          # Your HTTP server, Apache/etc
+role :app, "198.211.120.82"                          # This may be the same as your `Web` server
+role :db,  "198.211.120.82", :primary => true # This is where Rails migrations will run
 
 set :deploy_to,   "/home/#{application}"
 

@@ -1,80 +1,53 @@
-.bundle
+# bundler state
+/.bundle
+/vendor/bundle/
+
+# minimal Rails specific artifacts
 db/*.sqlite3
-log/*.log
-tmp/
-# Rails
-.bundle
-db/*.sqlite3
-db/*.sqlite3-journal
-*.log
-tmp
-tmp/**/*
+/log/*
+tmp/*
 
-# Documentation
-doc/api
-doc/app
-.yardoc
-.yardopts
+# various artifacts
+**.war
+*.rbc
+*.sassc
+.rspec
+.sass-cache
+/config/config.yml
+/config/database.yml
+/coverage.data
+/coverage/
+/db/*.javadb/
+/db/*.sqlite3-journal
+/doc/api/
+/doc/app/
+/doc/features.html
+/doc/specs.html
+/public/cache
+/public/stylesheets/compiled
+/public/system
+/spec/tmp/*
+/cache
+/capybara*
+/capybara-*.html
+/gems
+/rerun.txt
+/spec/requests
+/spec/routing
+/spec/views
+/specifications
 
-# Public Uploads
-public/system/*
-public/themes/*
+# scm revert files
+**.orig
 
-# Public Cache
-public/javascripts/cache
-public/stylesheets/cache
-
-# Vendor Cache
-vendor/cache
-
-# Acts as Indexed
-index/**/*
-
-# Refinery Specific
-*.tmproj
-*.autobackupbyrefinery.*
-refinerycms-*.gem
-.autotest
-
-# Mac
+# Mac finder artifacts
 .DS_Store
 
-# Windows
-Thumbs.db
+# Netbeans project directory
+/nbproject/
 
-# NetBeans
-nbproject
+# Textmate project files
+/*.tmpproj
 
-# Eclipse
-.project
-
-# Redcar
-.redcar
-
-# Rubinius
-*.rbc
-
-# Vim
-*.swp
-*.swo
-
-# RubyMine
-.idea
-
-# E-texteditor
-.eprj
-
-# Backup
-*~
-
-# Capybara Bug
-capybara-*html
-
-# sass
-.sass-cache
-.sass-cache/*
-
-#rvm
-.rvmrc
-.rvmrc.*
-
+# vim artifacts
+**.swp
